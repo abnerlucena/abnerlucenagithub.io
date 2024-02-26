@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: #202124;
+}
+
+h1 {
+  color: red;
+}
+
+footer {
+  background-color: #f2f2f2;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 29px;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+  padding: 6px 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo-google {
+  height: 92px;
+}
+
+.link-cabeçalho {
+  color: #000000de;
+  font-size: 13px;
+  transform: translate(16px);
+}
+
+.icone-produtos {
+  width: 24px;
+  fill: #5f6368;
+}
+
+.caixa-rodape {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.caixa-rodape--borda {
+  border-bottom: 1px solid #dadce0;
+  padding: 15px 30px;
+}
+
+.caixa-icone {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.caixa-icone:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.caixa-links {
+  display: flex;
+  gap: 30px;
+}
+
+.icone-input {
+  width: 20px;
+  min-width: 20px;
+  fill: #9aa0a6;
+}
+
+.caixa-input {
+  width: 560px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 10px 14px;
+  border: 1px solid #dfe1e5;
+  border-radius: 100px;
+}
+
+.caixa-input:hover,
+.caixa-input:focus-within {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.icone-colorido {
+  width: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.icone-teclado {
+  width: 19px;
+}
+
+.caixa-teclado, 
+.caixa-microfone, 
+.caixa-camera,
+.caixa-apps {
+  cursor: pointer;
+  position: relative;
+  transform: translate(10px);
+}
+
+
+
+.caixa-teclado::after, 
+.caixa-microfone::after, 
+.caixa-camera::after,
+.caixa-apps::after {
+  display: none;
+  content: "Ferramenta de introdução";
+  background-color: #4f5355;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 13px;
+  position: absolute;
+  width: max-content;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 30px);
+}
+
+.caixa-microfone::after {
+  content: "Pesquisar por voz";
+}
+
+.caixa-camera::after {
+  content: "Pesquisar por imagem";
+}
+
+.caixa-apps::after { 
+  content: "Google Apps";
+}
+
+.caixa-teclado:hover::after, 
+.caixa-microfone:hover::after,
+.caixa-camera:hover::after,
+.caixa-apps:hover::after {
+  display: block;
+}
+
+.caixa-icones {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.input-pesquisa {
+  width: 100%;
+  height: 22px;
+  border: none;
+  outline: none;
+}
+
+.estatico {
+  position: relative;
+  margin: 5px;
+}
+
+.botão {
+  font-family: Arial, sans-serif;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #f8f9fa;
+  border: 1px solid transparent;
+  cursor: pointer;
+  
+}
+
+.botão:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+}
+
+.botão--entrar {
+  font-family: Google Sans, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  background-color: #1a73e8;
+  color: white;
+  padding: 9px 23px;
+  border-left: 1px;
+  border: 1px solid;
+  margin-left: 8px;
+  margin-right: 8px;
+  position: relative;
+  
+}
+
+.botão--entrar:hover {
+  background-color: #1b66c9;
+  box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
+    0 1px 2px 0 rgba(60, 64, 67, 0.3);
+  text-decoration: none;
+}
+
+.caixa-botões {
+  display: flex;
+  gap: 8px;
+}
+
+.caixa-disponibilizado {
+  color: #4d5156;
+  font-size: 13px;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10vh;
+}
+
+.link-disponibilizado {
+  color: #1a0dab;
+}
